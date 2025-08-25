@@ -8,22 +8,22 @@
     padding: 15px 5%;
   }
 
-  #profile {
+ #profile {
     flex-direction: column;
-    text-align: center;
-    height: auto;
+    gap: 1rem;
     padding: 2rem 1rem;
+    align-items: center;   /* ✅ This will center children horizontally */
+    text-align: center;    /* ✅ Makes text aligned in center */
   }
 
-  .section__pic-container {
-    margin: 20px auto;
-    width: 220px;
-    height: 220px;
+
+ .section__pic-container {
+    margin: 0 auto;        /* ✅ Ensures image container is centered */
   }
 
-  .section__pic-container img {
-    width: 220px;
-    height: 220px;
+   .section__pic-container img {
+    display: block;
+    margin: 0 auto;        /* ✅ Centers the actual image */
   }
 
   .section-container {
