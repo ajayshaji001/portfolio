@@ -9,17 +9,25 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo" >Ajay Shaji</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <div class="logo">Ajay Shaji</div>
+  <div class="nav-links-container">
+    <ul class="nav-links">
+      <li><a href="#profile">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#about">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hamburger icon -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
 <section id="profile">
     <div class="section__pic-container">
         <img src="assets/portfolio-pic.jpg" alt="Profile Image">
@@ -30,7 +38,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/AJAY_CV.pdf')"
           >
             Download CV
           </button>
@@ -43,13 +51,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/ajay-shaji-10797b228/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/ajayshaji001'"
           />
         </div>
       </div>
@@ -77,99 +85,93 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Tech<br>Pursuing Mtech at NITK</p>
+              <p>Pursuing Mtech at NITK</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              I am a B.Tech graduate in Computer Science from Kerala Technological University and have two years of experience as a Java Backend Developer at Envestnet, where I worked on building scalable backend systems and APIs using Java and Spring Boot. I am currently pursuing my M.Tech in Computer Science and Information Security at NIT Karnataka, with a focus on advancing my expertise in secure, efficient, and reliable software systems.
+              I am a passionate software developer with a strong foundation in computer science and hands-on industry experience.I am currently pursuing my M.Tech in Computer Science and Information Security at NIT Karnataka, focusing on secure and efficient software systems. Previously, I completed my B.Tech in Computer Science from Kerala Technological University and worked for two years at Envestnet as a Java Backend Developer, specializing in Java and Spring Boot.
             </p>
           </div>
         </div>
         
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+
     </section>
 <section id="experience">
-      <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java SpringBoot</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Apigee Tool</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
+    <div class="experience-text">
+  <p>
+    I have 2 years of experience as a Java Backend Developer at Envestnet Asset Management, a leading fintech company. During my time there, I was actively involved in designing and implementing scalable backend solutions, working on a wide range of features, bug fixes, and performance optimizations. I contributed to several security-focused initiatives to strengthen the platform's compliance and data protection measures. My work involved collaborating closely with cross-functional teams, adhering to best practices in software development, and ensuring high-quality, reliable code in a fast-paced fintech environment.
+  </p>
+</div>
+
+     <section id="skills">
+  <h1 class="title">Skills</h1>
+
+  <div class="skills-container">
+    <!-- Frontend Skills -->
+         <div class="skill-category">
+      <h2>Backend</h2>
+      <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>Spring Boot</li>
+        <li>REST APIs</li>
+        <li>SQL</li>
+        <li>Microservices</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h2>Frontend</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <!-- Backend Skills -->
+
+
+    <!-- Tools -->
+    <div class="skill-category">
+      <h2>Tools</h2>
+      <ul>
+        <li>Git</li>
+        <li>Postman</li>
+        <li>New relic</li>
+        <li>JIRA</li>
+        <li>Apigee</li>
+      </ul>
+    </div>
+  </div>
+</section>
+   <section id="projects">
+  <h1 class="title">Projects</h1>
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="./assets/project1.png" alt="Customer Churn Prediction Project" class="project-img">
+      <h3>Customer Churn Prediction</h3>
+      <p>
+        Built a machine learning model to predict customer churn by analyzing behavioral patterns and usage data. 
+        Helped in developing strategies to improve customer retention.
+      </p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="./assets/project2.png" alt="Asset Management System Project" class="project-img">
+      <h3>Asset Management System</h3>
+      <p>
+        Developed a web-based application to efficiently manage and track laboratory assets in the college. The system allows administrators to record, update, and monitor lab equipment details, ensuring better utilization and reducing manual effort.
+      </p>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -196,7 +198,7 @@
             alt="Phone icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">8547932886</a></p>
+          <p>8547932886</a></p>
         </div>
       </div>
     </section>
@@ -211,7 +213,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Ajay Shaji. All Rights Reserved.</p>
+    
     </footer>
 <script src="script.js"></script>
   

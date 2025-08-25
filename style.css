@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 p{
-color: rgb(85, 85, 85);
+color: rgb(0, 0, 0);
     }
 
 a,btn{
@@ -222,6 +222,7 @@ logo{
 
 #experience {
   position: relative;
+  
 }
 
 .experience-sub-title {
@@ -340,9 +341,158 @@ footer .nav-links {
   flex: 2;                     /* Slightly larger for text */
   text-align: justify;         /* Neat alignment */
   line-height: 1.6;
+  margin-bottom: 3rem; 
 }
 
 .about-containers {
   padding: 20px;   /* Inner spacing for the whole group */
   box-sizing: border-box;
+}
+.text-containerExpereince{
+   flex: 2;                     /* Slightly larger for text */
+  text-align: center;         /* Neat alignment */
+  line-height: 1.6;
+  padding: 100;
+
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none; /* Hidden on desktop */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Show menu on mobile */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 7vh;
+    right: 0;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show when toggled */
+  }
+
+  .hamburger {
+    display: flex; /* Show only on mobile */
+  }
+}
+
+.experience-text {
+  max-width: 800px;   /* keeps it readable */
+  margin: 0 auto;     /* centers horizontally */
+  text-align: center; /* centers text */
+  line-height: 1.8;
+  padding: 20px;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* makes it responsive */
+  margin-top: 2rem;
+}
+
+.skill-category {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category ul li {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+h2 {
+   color: #2979FF !important;
+}
+h3 {
+   color: rgb(12, 12, 12) !important;
+}
+
+/* Projects Section */
+#projects {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* ensures responsiveness */
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+}
+
+.project-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
 }
